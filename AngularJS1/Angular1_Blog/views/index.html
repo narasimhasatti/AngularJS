@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="BlogApp">
+	<head>
+		<title>Simple Blog App - Narasimha</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/site.css">
+	</head>
+	<body>
+		<div class="container">
+			<h1>Angular Simple Blog</h1>		
+			<div>
+				<ui-view></ui-view>
+			</div>
+		</div>
+		<!--
+		<script src="/scripts/vendors.min.js"></script>
+		<script src="/scripts/app.min.js"></script>
+		-->
+		<script src="/angular/angular.min.js"></script>
+		<script src="/angular-ui-router/release/angular-ui-router.min.js"></script>
+		<script src="/javascript/app.js"></script>
+		<script src="javascript/controllers/CreateBlogController.js"></script>
+		<script src="javascript/controllers/MainController.js"></script>
+		<script src="javascript/controllers/ViewBlogController.js"></script>
+		<script src="javascript/controllers/EditBlogController.js"></script>
+	</body>
+</html>

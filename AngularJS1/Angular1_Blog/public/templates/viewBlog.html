@@ -1,0 +1,18 @@
+<div ng-controller="ViewBlogController as vm">
+	<a class='btn btn-default' ui-sref='Home'> Home </a>
+	<h2> Blogs: </h2>
+
+	<div>
+		<div class="well container">
+			<h3>{{vm.b.title}} </h3>
+			
+			<h4>{{vm.b.body}}</h4>
+			<h4>Posted by: {{vm.b.author}} </h4>
+			<h5>On: {{vm.b.date}}</h5>
+			<button type="button" class="btn btn-danger" ng-click="vm.deleteBlog(vm.b)">Delete</button>
+			<button type="button" class="btn btn-warning" ui-sref='EditBlog({id: vm.b._id})'>Edit</button>
+		</div>
+	</div>
+
+	
+</div>

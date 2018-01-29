@@ -1,0 +1,9 @@
+<div ng-controller="CreateBlogController as vm">
+	<form class="well container" ng-submit="vm.postBlog();">
+		Title: <input class="form-control" placeholder="Title" ng-model="vm.newBlog.title">
+		Blog: <input class="form-control" placeholder="Blog!" ng-model="vm.newBlog.body">
+		Author: <input class="form-control" placeholder="Your Name" ng-model="vm.newBlog.author">
+		<button type="submit" class="btn btn-success">Blog it!</button>
+		<a class="btn btn-danger" ui-sref="Home">Cancel</a>
+	</form>
+</div>

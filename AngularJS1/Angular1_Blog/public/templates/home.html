@@ -1,0 +1,16 @@
+<div ng-controller="MainController as vm" >
+
+	<a class="btn btn-success" ui-sref="CreateBlog">Create New Blog</a>
+	
+	<div ng-repeat="b in vm.blogs">
+		<div class="well container">
+			
+			<a ui-sref="ViewBlog({id: b._id})"><h3>{{b.title}}</h3></a>
+			
+			<h3>{{b.date}}</h3>
+<!-- 			<button type="button" class="btn btn-danger" ng-click="vm.deleteBlog(b)">Delete</button>
+ -->		</div>
+	</div>
+
+	
+</div>

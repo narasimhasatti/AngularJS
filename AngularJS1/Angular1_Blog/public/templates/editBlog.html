@@ -1,0 +1,13 @@
+<div ng-controller="EditBlogController as vm">
+
+	<form class="well container" ng-submit="vm.editBlog(vm.blog);">
+		<label> Title </label>
+					<input class="form-control" placeholder="Title..." ng-model="vm.blog.title" required />
+		<label> Blog Post </label>
+			<input class="form-control" placeholder="Blog..." ng-model="vm.blog.body" required />
+		<label> Author </label>
+			<input class="form-control" placeholder="Author..." ng-model="vm.blog.author" required />
+			<button type="submit" class="btn btn-success">Submit</button>
+	</form>
+
+</div>
